@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root
+{
+    
+  --Pink: hsl(322, 100%, 66%);
+  --PaleCyan: hsl(193, 100%, 96%);
+  --DarkCyan: hsl(192, 100%, 9%);
+  ---GrayishBlue: hsl(208, 11%, 55%);
+}
+body
+{
+    font-size: 	1.125rem;
+    width: 100vh;
+    height: 100vh;
+}
+
+h1
+{
+    font-weight: 600;
+    font-family: 'Poppins';
+    padding: 1rem;
+    letter-spacing:1px;
+    font-size: 2rem;
+}
+p
+{
+    padding: 1rem;
+    margin: 0.2rem 0.2rem 1rem 0.2rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: serif;
+
+}
+a, li 
+{
+    text-decoration: none;
+    list-style: none;
+}
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+header
+{
+    width: 100vw;
+
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo , .navbar 
+{
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 1rem; 
+ }
+.login
+{
+    padding: 0.35rem  1.5rem;
+    margin: 0.2rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    background-color: var(--DarkCyan);
+    border: none;
+    color: white;
+}
+.login:hover
+{
+    background-color: transparent;
+    border: 1px solid var(--DarkCyan);
+    color: rgb(0, 0, 0);
+
+}
+.main
+{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    opacity: 2rem;
+    position: relative;
+
+}
+.introduction
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:absolute;
+    top: 130px;
+    left: 0;
+    right: 0;   
+}
+ .introduction .right
+ {
+     padding: 0.5rem ;
+     margin: 2rem 2rem;
+ }
+
+.introduction .left img
+{
+    width: 100%;
+    padding:0.5rem ;
+}
+.main-btn
+{
+    font-size: 1.2rem;
+    background-color: var(--DarkCyan);
+    padding: 0.4rem 1rem;
+    margin: 1rem 1rem 1rem 2rem;
+    border-radius:20px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+.main-btn:hover
+{
+    background-color: transparent;
+    border: 1px solid var(--DarkCyan);
+    color: black;
+}
+
+
+@media only screen and (max-width: 270px){
+
+ nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+   
+   
+
+.introduction
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    top: 130px;
+}
+.introduction .left 
+{
+ margin-top: 2rem;  
+ padding: 1rem;
+
+
+}
+.introduction .left img
+{
+    width: 100%;
+    padding:0.5rem 
+}
+.main-btn
+{
+    margin: 2rem;
+}
+.main
+{
+  
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/bg-hero-mobile.svg);
+    background-position: center;
+    background-size: cover;
+    opacity: 2rem;
+    position: relative;
+
+}
+   
+
+}
+@media only screen and (max-width: 800px)
+{
+    body
+    {
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+
+    }
+
+ .introduction
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    top: 90px;
+    transform: translateX(30px);
+}
+
+h1
+{
+    font-weight: 800;
+    font-family: 'Poppins';
+    padding: 0.43rem;
+    letter-spacing:1px;
+    font-size: 2rem;
+}
+p
+{
+    padding: 1rem;
+    margin: 0.2rem 0.2rem 1rem 0.2rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    /* font-family: serif; */
+
+}
+.main-btn
+{
+    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+    margin: 5rem 1rem 1rem 0.2rem;
+
+
+}
+.introduction .left img
+{
+    width: 90%;
+}
+.main
+{
+  
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/bg-hero-mobile.svg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}   
+}
+@media only screen and (min-width: 1000px){
+    body
+    {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+
+    }
+
+ .introduction
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+}
+    
+
+
+
+
+    
+
